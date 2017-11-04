@@ -54,11 +54,13 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v){
+
+        String messageText = mChatView.getInputText();
         //New message
         Message message = new Message.Builder()
                 .setUser(me)
                 .setRightMessage(true)
-                .setMessageText(mChatView.getInputText())
+                .setMessageText(messageText)
                 .hideIcon(true)
                 .build();
 
@@ -67,7 +69,11 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         //Reset edit text
         mChatView.setInputText("");
 
-        //Receive message
+        SocketCommunication socket = new SocketCommunication();
+        socket.send(messageText);
+
+        //Receive message (demo)
+
         final Message receiveMessage = new Message.Builder()
                 .setUser(you)
                 .setRightMessage(false)
