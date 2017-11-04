@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CrazyDreamer2</string>
+
+    <string-array name= "list">
+    <item>Ａさん</item>
+    <item>Ｉさん</item>
+    <item>Ｚさん</item>
+    <item>Ｕさん</item>
+    <item>Ｗさん</item>
+    <item>Ｋさん</item>
+    <item>Ｍさん</item>
+    <item>Ｓさん</item>
+    <item>Ｔさん</item>
+
+</string-array>
+
 </resources>
