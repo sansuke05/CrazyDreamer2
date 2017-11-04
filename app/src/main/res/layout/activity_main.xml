@@ -8,6 +8,4 @@
     tools:context="jp.ac.u_aizu.zudai.crazydreamer2.MainActivity"
     android:weightSum="1">
 
-
-
 </LinearLayout>
