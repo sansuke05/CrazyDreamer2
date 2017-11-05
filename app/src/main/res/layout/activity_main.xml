@@ -8,7 +8,7 @@
     tools:context="jp.ac.u_aizu.zudai.crazydreamer2.MainActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar"
         android:title="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
