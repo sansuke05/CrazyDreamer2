@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:src="@drawable/img_brand_logo"
+            android:id="@+id/image_teamlogo"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TeamName"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/image_teamlogo"/>
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Team ID"
+            android:textSize="20sp"
+            android:layout_below="@id/text_name"
+            android:layout_toRightOf="@id/image_teamlogo"
+            />
+
+        <TextView
+            android:id="@+id/text_tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tag"
+            android:textSize="20sp"
+            android:layout_below="@id/text_id"
+            android:layout_toRightOf="@id/image_teamlogo"
+            />
+
+        <TextView
+            android:id="@+id/text_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/frame_style_userprofile_selfintro"
+            android:layout_below="@id/image_teamlogo"
+            android:padding="96dp"
+            android:textColor="#000000"
+            />
+
+
+        <ImageView
+            android:src="@drawable/join"
+            android:id="@+id/image_join"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/text_introduction"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
