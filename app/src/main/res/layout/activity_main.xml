@@ -9,6 +9,7 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
+        android:title="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -21,6 +22,7 @@
         android:orientation="vertical">
 
         <ListView
+            android:id="@+id/pic_up_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
@@ -28,6 +30,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/home"
+            android:layout_weight="0.00" />
+
+        <ImageButton
+            android:id="@+id/userListButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/user_list" />
+
+        <ImageButton
+            android:id="@+id/teamListButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/team_list" />
+
+        <ImageButton
+            android:id="@+id/partyButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/perty" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            app:srcCompat="@drawable/profile" />
+    </LinearLayout>
   
 </LinearLayout>
