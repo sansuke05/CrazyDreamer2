@@ -34,7 +34,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         int myId = 0;
 
         //user icon
-        Bitmap myIcon = BitmapFactory.decodeResource(getResources(), R.drawable.face_sample);
+        Bitmap myIcon = BitmapFactory.decodeResource(getResources(), R.drawable.face_icon1);
 
         //user name
         String myName = "Taki";

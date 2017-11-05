@@ -7,6 +7,6 @@ public class TeamListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_userlist);
+        setContentView(R.layout.activity_teamlist);
     }
 }

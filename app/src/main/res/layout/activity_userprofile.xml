@@ -10,7 +10,7 @@
         android:padding="16dp">
 
         <ImageView
-            android:src="@drawable/face_sample"
+            android:src="@drawable/face_icon1"
             android:id="@+id/face"
             android:layout_width="192dp"
             android:layout_height="192dp"
