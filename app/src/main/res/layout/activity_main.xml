@@ -5,9 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="jp.ac.u_aizu.zudai.crazydreamer2.MainActivity"
-    android:weightSum="1">
+    tools:context="jp.ac.u_aizu.zudai.crazydreamer2.MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="424dp"
+        android:orientation="vertical">
 
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+  
 </LinearLayout>
