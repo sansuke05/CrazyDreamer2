@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent2);
                 break;
             case R.id.partyButton:
-                Intent intent3 = new Intent(this, PartyActivity.class);
+                Intent intent3 = new Intent(this, ChatActivity.class);
                 startActivity(intent3);
                 break;
             case R.id.profileButton:
