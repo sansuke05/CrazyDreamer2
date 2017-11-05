@@ -2,55 +2,74 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:orientation="vertical"
+    tools:context="jp.ac.u_aizu.zudai.crazydreamer2.MainActivity">
 
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:title="@string/app_name"
         android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageView"
-            android:text="ＺＵＤＡＩ"
-            android:textSize="25sp"
-            tools:textColor="@android:color/background_dark" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/textView"
-            android:layout_toEndOf="@+id/imageView"
-            android:text="\@univ_aizu" />
-
-        <TextView
-
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/textView2"
-            android:layout_toEndOf="@+id/imageView"
-            android:text="スマホでできるＶＲアクションゲームを開発中です！デザイナー募集中！"
-            tools:textColor="@android:color/black" />
-
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="68dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            app:srcCompat="@drawable/img_brand_logo" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
 
-    </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="439dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/teams_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/home"
+            android:layout_weight="0.00" />
+
+        <ImageButton
+            android:id="@+id/userListButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/user_list" />
+
+        <ImageButton
+            android:id="@+id/teamListButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/team_list" />
+
+        <ImageButton
+            android:id="@+id/partyButton"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/perty" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/profile" />
+    </LinearLayout>
 
 </LinearLayout>

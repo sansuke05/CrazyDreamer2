@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    public void initListView() {
+    private void initListView() {
 
         ArrayList<String> list = new ArrayList<String>();
         PickUpAdapter adapter = new PickUpAdapter(this);
