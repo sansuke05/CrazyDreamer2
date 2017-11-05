@@ -17,8 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/imageView3"
-            android:text="山田　太郎"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="ＺＵＤＡＩ"
             android:textSize="25sp"
             tools:textColor="@android:color/background_dark" />
 
@@ -28,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/textView"
-            android:layout_toEndOf="@+id/imageView3"
-            android:text="taroo@u-aizu.ac.jp" />
+            android:layout_toEndOf="@+id/imageView"
+            android:text="\@univ_aizu" />
 
         <TextView
 
@@ -38,18 +38,18 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_below="@+id/textView2"
-            android:layout_toEndOf="@+id/imageView3"
-            android:text="エンジニア志望の大学生です！ Abdroidアプリを制作中です。"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="スマホでできるＶＲアクションゲームを開発中です！デザイナー募集中！"
             tools:textColor="@android:color/black" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="86dp"
-            android:layout_height="87dp"
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            app:srcCompat="@drawable/face_sample"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/img_brand_logo" />
 
     </RelativeLayout>
 

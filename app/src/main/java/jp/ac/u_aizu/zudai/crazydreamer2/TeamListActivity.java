@@ -1,8 +1,12 @@
 package jp.ac.u_aizu.zudai.crazydreamer2;
 
-/**
- * Created by sano keita on 2017/11/04.
- */
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class TeamListActivity {
+public class TeamListActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_userlist);
+    }
 }
