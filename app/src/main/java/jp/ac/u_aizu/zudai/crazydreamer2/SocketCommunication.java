@@ -40,7 +40,7 @@ public class SocketCommunication {
         BufferedWriter writer = null;
 
         try {
-            connection = new Socket("127.0.0.1", 8888);
+            connection = new Socket("192.168.179.3", 8888);
             connection.setSoTimeout(1000);
 
             writer = new BufferedWriter(new OutputStreamWriter(connection.getOutputStream()));
